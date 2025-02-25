@@ -1,12 +1,16 @@
 
 
+
 const getUserNames = (users) => {
-    const res = [];
-    for (const username of users) {
-        res.push(username.name)
-    }
-    return res;
+  return users.map(username =>  username.name)
 }
+    // const res = [];.
+    // for (const username of users) {
+    //     res.push(username.name)
+    // }
+    // return res;
+ 
+
 
 console.log(
   getUserNames([
